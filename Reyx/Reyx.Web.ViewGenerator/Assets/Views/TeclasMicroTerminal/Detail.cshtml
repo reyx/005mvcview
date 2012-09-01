@@ -1,0 +1,30 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/teclasmicroterminal.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Teclas Micro Terminal</legend>
+    @Html.Hidden("ID_TCMT")
+        <div class="control-group">
+            <label class="control-label" for="ID_MTER">Id Mter</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_MTER)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TECLA_TCMT">Tecla Tcmt</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TECLA_TCMT)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_PROD">Cod Prod</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_PROD)
+            </div>
+        </div>
+    </fieldset>
+</form>

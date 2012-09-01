@@ -1,0 +1,36 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/evolucaocustos.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Evolucao Custos</legend>
+    @Html.Hidden("ID_EVCS")
+        <div class="control-group">
+            <label class="control-label" for="COD_PROD">Cod Prod</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_PROD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CUSTO_EVCS">Custo Evcs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CUSTO_EVCS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DATA_EVCS">Data Evcs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DATA_EVCS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_LISTA">Cod Lista</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_LISTA)
+            </div>
+        </div>
+    </fieldset>
+</form>

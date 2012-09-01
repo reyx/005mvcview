@@ -1,0 +1,96 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/tiposrecebimento.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Tipos Recebimento</legend>
+    @Html.Hidden("COD_TPRC")
+        <div class="control-group">
+            <label class="control-label" for="DESC_TPRC">Desc Tprc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESC_TPRC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DESCRED_TPRC">Descred Tprc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESCRED_TPRC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PTSANGRIA_TPRC">Ptsangria Tprc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PTSANGRIA_TPRC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="IMPCHQ_TPRC">Impchq Tprc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.IMPCHQ_TPRC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TIPOTEF_TPRC">Tipotef Tprc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TIPOTEF_TPRC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="IDTEF_TPRC">Idtef Tprc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.IDTEF_TPRC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="GERAREC_TPRC">Gerarec Tprc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.GERAREC_TPRC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="REDUCAO_TPRC">Reducao Tprc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.REDUCAO_TPRC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VIASTEF_TPRC">Viastef Tprc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VIASTEF_TPRC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_RDTF">Id Rdtf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_RDTF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DETALHE_TPRC">Detalhe Tprc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DETALHE_TPRC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="GRUPOFEC_TPRC">Grupofec Tprc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.GRUPOFEC_TPRC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ICONE_TPRC">Icone Tprc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ICONE_TPRC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COMPORT_TPRC">Comport Tprc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COMPORT_TPRC)
+            </div>
+        </div>
+    </fieldset>
+</form>

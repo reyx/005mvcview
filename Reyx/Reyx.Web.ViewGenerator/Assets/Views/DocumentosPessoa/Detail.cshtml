@@ -1,0 +1,36 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/documentospessoa.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Documentos Pessoa</legend>
+    @Html.Hidden("ID_DCPS")
+        <div class="control-group">
+            <label class="control-label" for="ID_PESSOA">Id Pessoa</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_PESSOA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_DOC">Cod Doc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_DOC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VALOR_DCPS">Valor Dcps</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VALOR_DCPS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_UF">Id Uf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_UF)
+            </div>
+        </div>
+    </fieldset>
+</form>

@@ -1,0 +1,66 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/recebimentospdv.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Recebimentos Pdv</legend>
+    @Html.Hidden("ID_RCPD")
+        <div class="control-group">
+            <label class="control-label" for="ID_MVPD">Id Mvpd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_MVPD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_TPRC">Cod Tprc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_TPRC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_STRC">Cod Strc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_STRC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_PRST">Cod Prst</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_PRST)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VALOR_RCPD">Valor Rcpd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VALOR_RCPD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DEPOSITO_RCPD">Deposito Rcpd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DEPOSITO_RCPD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="SANGRIA_RCPD">Sangria Rcpd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.SANGRIA_RCPD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VALORLIQ_RCPD">Valorliq Rcpd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VALORLIQ_RCPD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VALORREAL_RCPD">Valorreal Rcpd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VALORREAL_RCPD)
+            </div>
+        </div>
+    </fieldset>
+</form>

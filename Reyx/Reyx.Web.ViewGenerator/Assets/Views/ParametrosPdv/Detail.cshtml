@@ -1,0 +1,36 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/parametrospdv.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Parametros Pdv</legend>
+    @Html.Hidden("ID_PRPD")
+        <div class="control-group">
+            <label class="control-label" for="ID_PDV">Id Pdv</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_PDV)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_TPPD">Id Tppd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_TPPD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VALOR_PRPD">Valor Prpd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VALOR_PRPD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TEXTO_PRPD">Texto Prpd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TEXTO_PRPD)
+            </div>
+        </div>
+    </fieldset>
+</form>

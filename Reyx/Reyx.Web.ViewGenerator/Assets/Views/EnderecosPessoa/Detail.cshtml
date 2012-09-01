@@ -1,0 +1,84 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/enderecospessoa.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Enderecos Pessoa</legend>
+    @Html.Hidden("ID_ENPS")
+        <div class="control-group">
+            <label class="control-label" for="ID_PESSOA">Id Pessoa</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_PESSOA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_TPEN">Id Tpen</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_TPEN)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="LOGRADOURO_ENPS">Logradouro Enps</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.LOGRADOURO_ENPS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="NUMERO_ENPS">Numero Enps</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.NUMERO_ENPS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COMPL_ENPS">Compl Enps</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COMPL_ENPS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BAIRRO_ENPS">Bairro Enps</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BAIRRO_ENPS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CIDADE_ENPS">Cidade Enps</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CIDADE_ENPS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CODIBGE_CID_ENPS">Codibge Cid Enps</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CODIBGE_CID_ENPS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="UF_ENPS">Uf Enps</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.UF_ENPS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CODIBGE_UF_ENPS">Codibge Uf Enps</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CODIBGE_UF_ENPS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CEP_ENPS">Cep Enps</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CEP_ENPS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PADRAO_ENPS">Padrao Enps</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PADRAO_ENPS)
+            </div>
+        </div>
+    </fieldset>
+</form>

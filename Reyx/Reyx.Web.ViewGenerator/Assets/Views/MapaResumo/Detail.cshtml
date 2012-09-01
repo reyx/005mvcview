@@ -1,0 +1,114 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/maparesumo.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Mapa Resumo</legend>
+    @Html.Hidden("ID_MPRS")
+        <div class="control-group">
+            <label class="control-label" for="DATA_MPRS">Data Mprs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DATA_MPRS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="NUMERO_MPRS">Numero Mprs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.NUMERO_MPRS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_LOJA">Cod Loja</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_LOJA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_ECF">Id Ecf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_ECF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CONTOP_MPRS">Contop Mprs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CONTOP_MPRS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="GTINI_MPRS">Gtini Mprs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.GTINI_MPRS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="GTFIN_MPSR">Gtfin Mpsr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.GTFIN_MPSR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="MOVDIA_MPRS">Movdia Mprs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.MOVDIA_MPRS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CANCDIA_MPRS">Cancdia Mprs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CANCDIA_MPRS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DESCDIA_MPRS">Descdia Mprs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESCDIA_MPRS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="LIQUIDO_MPRS">Liquido Mprs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.LIQUIDO_MPRS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CONTRED_MPRS">Contred Mprs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CONTRED_MPRS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="SUBSTRIB_MPRS">Substrib Mprs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.SUBSTRIB_MPRS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ISENTOS_MPRS">Isentos Mprs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ISENTOS_MPRS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="NAOTRIB_MPRS">Naotrib Mprs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.NAOTRIB_MPRS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CONTROP_MPRS">Controp Mprs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CONTROP_MPRS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CONTOPFIN_MPRS">Contopfin Mprs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CONTOPFIN_MPRS)
+            </div>
+        </div>
+    </fieldset>
+</form>

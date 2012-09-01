@@ -1,0 +1,126 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/transacoesestoque.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Transacoes Estoque</legend>
+    @Html.Hidden("ID_TRES")
+        <div class="control-group">
+            <label class="control-label" for="ID_OPER">Id Oper</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_OPER)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_FORN">Cod Forn</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_FORN)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_CLI">Cod Cli</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_CLI)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_LCES">Cod Lces</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_LCES)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_TPMV">Cod Tpmv</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_TPMV)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_VLPR">Id Vlpr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_VLPR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DATA_TRES">Data Tres</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DATA_TRES)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QTDE_TRES">Qtde Tres</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QTDE_TRES)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ESTANT_TRES">Estant Tres</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ESTANT_TRES)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ESTATU_TRES">Estatu Tres</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ESTATU_TRES)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VALOR_TRES">Valor Tres</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VALOR_TRES)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DOCTO_TRES">Docto Tres</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DOCTO_TRES)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="OPERACAO_TRES">Operacao Tres</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.OPERACAO_TRES)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_ITEN">Id Iten</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_ITEN)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_ITVD">Id Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DATASIS">Datasis</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DATASIS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_LOJA">Cod Loja</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_LOJA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_ITMV">Id Itmv</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_ITMV)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_ITIV">Id Itiv</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_ITIV)
+            </div>
+        </div>
+    </fieldset>
+</form>

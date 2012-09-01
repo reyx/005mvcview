@@ -1,0 +1,54 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/condicoespagamento.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Condicoes Pagamento</legend>
+    @Html.Hidden("COD_CDPG")
+        <div class="control-group">
+            <label class="control-label" for="DESC_CDPG">Desc Cdpg</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESC_CDPG)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TIPO_CDPG">Tipo Cdpg</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TIPO_CDPG)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TAXA_CDPG">Taxa Cdpg</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TAXA_CDPG)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TAC_CDPG">Tac Cdpg</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TAC_CDPG)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COEF_CDPG">Coef Cdpg</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COEF_CDPG)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DIA_CDPG">Dia Cdpg</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DIA_CDPG)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PARCELAS_CDPG">Parcelas Cdpg</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PARCELAS_CDPG)
+            </div>
+        </div>
+    </fieldset>
+</form>

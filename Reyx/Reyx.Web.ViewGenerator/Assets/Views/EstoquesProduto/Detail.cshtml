@@ -1,0 +1,36 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/estoquesproduto.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Estoques Produto</legend>
+    @Html.Hidden("ID_ESPR")
+        <div class="control-group">
+            <label class="control-label" for="COD_LCES">Cod Lces</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_LCES)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_VLPR">Id Vlpr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_VLPR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_LOJA">Cod Loja</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_LOJA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ESTOQUE_ESPR">Estoque Espr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ESTOQUE_ESPR)
+            </div>
+        </div>
+    </fieldset>
+</form>

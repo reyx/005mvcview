@@ -1,0 +1,30 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/fornecedoresproduto.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Fornecedores Produto</legend>
+    @Html.Hidden("ID_FRPR")
+        <div class="control-group">
+            <label class="control-label" for="COD_FORN">Cod Forn</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_FORN)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_PROD">Cod Prod</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_PROD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_FNPD">Cod Fnpd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_FNPD)
+            </div>
+        </div>
+    </fieldset>
+</form>

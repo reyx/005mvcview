@@ -1,0 +1,84 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/lancamentos.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Lancamentos</legend>
+    @Html.Hidden("ID_LANC")
+        <div class="control-group">
+            <label class="control-label" for="ID_CTCR">Id Ctcr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_CTCR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DATA_LANC">Data Lanc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DATA_LANC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_HIST">Cod Hist</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_HIST)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_OPER">Id Oper</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_OPER)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_TPDS">Id Tpds</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_TPDS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DOCTO_LANC">Docto Lanc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DOCTO_LANC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VALOR_LANC">Valor Lanc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VALOR_LANC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="OPER_LANC">Oper Lanc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.OPER_LANC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="SALDOANT_LANC">Saldoant Lanc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.SALDOANT_LANC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="SALDOATU_LANC">Saldoatu Lanc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.SALDOATU_LANC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="OBS_LANC">Obs Lanc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.OBS_LANC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_LOJA">Cod Loja</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_LOJA)
+            </div>
+        </div>
+    </fieldset>
+</form>

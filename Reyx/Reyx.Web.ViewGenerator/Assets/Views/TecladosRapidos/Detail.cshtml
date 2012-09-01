@@ -1,0 +1,30 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/tecladosrapidos.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Teclados Rapidos</legend>
+    @Html.Hidden("ID_TCRP")
+        <div class="control-group">
+            <label class="control-label" for="DESC_TCRP">Desc Tcrp</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESC_TCRP)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ICONE_TCRP">Icone Tcrp</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ICONE_TCRP)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ORDEM_TCRP">Ordem Tcrp</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ORDEM_TCRP)
+            </div>
+        </div>
+    </fieldset>
+</form>

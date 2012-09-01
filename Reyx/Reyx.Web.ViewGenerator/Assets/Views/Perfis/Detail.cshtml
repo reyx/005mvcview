@@ -1,0 +1,24 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/perfis.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Perfis</legend>
+    @Html.Hidden("ID_PERF")
+        <div class="control-group">
+            <label class="control-label" for="DESC_PERF">Desc Perf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESC_PERF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="NIVEL_PERF">Nivel Perf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.NIVEL_PERF)
+            </div>
+        </div>
+    </fieldset>
+</form>

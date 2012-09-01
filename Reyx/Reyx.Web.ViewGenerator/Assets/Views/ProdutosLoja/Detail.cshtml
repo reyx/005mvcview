@@ -1,0 +1,137 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/produtosloja.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Produtos Loja</legend>
+        <div class="control-group">
+            <label class="control-label" for="COD_PROD">Cod Prod</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_PROD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_LOJA">Cod Loja</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_LOJA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PSCAIXA_PDLJ">Pscaixa Pdlj</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PSCAIXA_PDLJ)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ETIQPROG_PDLJ">Etiqprog Pdlj</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ETIQPROG_PDLJ)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COEFROYA_PDLJ">Coefroya Pdlj</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COEFROYA_PDLJ)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TIPOVENDA_PDLJ">Tipovenda Pdlj</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TIPOVENDA_PDLJ)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TIPOBAIXA_PDLJ">Tipobaixa Pdlj</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TIPOBAIXA_PDLJ)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TIPOENTR_PDLJ">Tipoentr Pdlj</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TIPOENTR_PDLJ)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ESTMIN_PDLJ">Estmin Pdlj</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ESTMIN_PDLJ)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ESTMAX_PDLJ">Estmax Pdlj</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ESTMAX_PDLJ)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="LOCAL_PDLJ">Local Pdlj</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.LOCAL_PDLJ)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_CDTR">Cod Cdtr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_CDTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_PROM">Cod Prom</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_PROM)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CST_PDLJ">Cst Pdlj</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CST_PDLJ)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="IPI_PDLJ">Ipi Pdlj</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.IPI_PDLJ)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ICMS_PDLJ">Icms Pdlj</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ICMS_PDLJ)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="REDUCAO_PDLJ">Reducao Pdlj</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.REDUCAO_PDLJ)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="SUBSTR_PDLJ">Substr Pdlj</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.SUBSTR_PDLJ)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="IPIPESO_PDLJ">Ipipeso Pdlj</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.IPIPESO_PDLJ)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CF_PDLJ">Cf Pdlj</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CF_PDLJ)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="IMPRESSORA_PDLJ">Impressora Pdlj</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.IMPRESSORA_PDLJ)
+            </div>
+        </div>
+    </fieldset>
+</form>

@@ -1,0 +1,72 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/layoutcnab.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Layout Cnab</legend>
+    @Html.Hidden("ID_LYCN")
+        <div class="control-group">
+            <label class="control-label" for="COD_BCO">Cod Bco</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_BCO)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_CTCR">Id Ctcr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_CTCR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TIPOREG_LYCN">Tiporeg Lycn</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TIPOREG_LYCN)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="SEQ_LYCN">Seq Lycn</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.SEQ_LYCN)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CAMPO_LYCN">Campo Lycn</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CAMPO_LYCN)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="SOMADIAS_LYCN">Somadias Lycn</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.SOMADIAS_LYCN)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TAMANHO_LYCN">Tamanho Lycn</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TAMANHO_LYCN)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ALINHA_LYCN">Alinha Lycn</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ALINHA_LYCN)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CARPRE_LYCN">Carpre Lycn</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CARPRE_LYCN)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TEXTO_LYCN">Texto Lycn</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TEXTO_LYCN)
+            </div>
+        </div>
+    </fieldset>
+</form>

@@ -1,0 +1,24 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/codigostributacao.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Codigos Tributacao</legend>
+    @Html.Hidden("COD_CDTR")
+        <div class="control-group">
+            <label class="control-label" for="DESC_CDTR">Desc Cdtr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESC_CDTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ALIQICMS">Aliqicms</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ALIQICMS)
+            </div>
+        </div>
+    </fieldset>
+</form>

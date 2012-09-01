@@ -1,0 +1,30 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/tipossangria.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Tipos Sangria</legend>
+    @Html.Hidden("COD_TPSG")
+        <div class="control-group">
+            <label class="control-label" for="DESC_TPSG">Desc Tpsg</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESC_TPSG)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="AUTORIZA_TPSG">Autoriza Tpsg</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.AUTORIZA_TPSG)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="EMISSAO_TPSG">Emissao Tpsg</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.EMISSAO_TPSG)
+            </div>
+        </div>
+    </fieldset>
+</form>

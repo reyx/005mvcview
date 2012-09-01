@@ -1,0 +1,36 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/parametros.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Parametros</legend>
+    @Html.Hidden("ID_PAR")
+        <div class="control-group">
+            <label class="control-label" for="COD_LOJA">Cod Loja</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_LOJA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_TPPR">Id Tppr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_TPPR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VALOR_PAR">Valor Par</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VALOR_PAR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TEXTO_PAR">Texto Par</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TEXTO_PAR)
+            </div>
+        </div>
+    </fieldset>
+</form>

@@ -1,0 +1,99 @@
+﻿@model Reyx.Web.ViewGenerator.Models.DbConnection
+@{    
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Scripts {
+    <script type="text/javascript">
+        $(function () {
+            $('[name="all"]').on('click', function () {
+                $(':checkbox').prop('checked', $(this).is(':checked'));
+            });
+        });
+    </script>
+}
+
+<div class="container-fluid">    
+    <form action="/" method="post" class="form-horizontal">
+        <fieldset>
+            @if (Model.Databases.Any())
+            {
+            <legend>@Model.Database</legend>
+            }
+            else
+            {
+            <legend>Banco de Dados</legend>
+            <div class="control-group">
+                <label class="control-label" for="DataSource">Sorce</label>
+                <div class="controls">
+                    @Html.EditorFor(model => model.DataSource)
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="User">Usuário</label>
+                <div class="controls">
+                    @Html.EditorFor(model => model.User)
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="Password">Senha</label>
+                <div class="controls">
+                    @Html.PasswordFor(model => model.Password)
+                </div>
+            </div>                
+            }
+            @if (Model.Databases.Any())
+            {
+            <div class="control-group">
+                <label class="control-label" for="Database">Bases</label>
+                <div class="controls">
+                    @Html.DropDownListFor(model => model.Database, new SelectList(Model.Databases, "Name", "Name"))
+                </div>
+            </div>
+            }
+            @if (Model.Tables.Any())
+            {
+            <div class="control-group">
+                <label class="control-label" for="all">Tabelas</label>
+                <div class="controls">
+                    <label class="checkbox">
+                        <input type="checkbox" name="all" />
+                        <strong>Todos</strong>
+                    </label>
+                    @foreach (Reyx.Web.ViewGenerator.Models.Table table in Model.Tables)
+                    {
+                    <label class="checkbox">
+                        <input type='checkbox' name='Table' value=@table.Name />
+                        @table.Name
+                    </label>
+                    }
+                </div>
+            </div>                
+            <div class="control-group">
+                <label class="control-label" for="TemplateView">Template View</label>
+                <div class="controls">
+                    @Html.TextArea("TemplateView")
+                </div>
+            </div>                
+            <div class="control-group">
+                <label class="control-label" for="TemplateForm">Template Form</label>
+                <div class="controls">
+                    @Html.TextArea("TemplateForm")
+                </div>
+            </div>                
+            <div class="control-group">
+                <label class="control-label" for="TemplateCampo">Template Campo</label>
+                <div class="controls">
+                    @Html.TextArea("TemplateCampo")
+                </div>
+            </div>
+            }
+
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Prosseguir <i class="icon-arrow-right icon-white"></i></button>
+            </div>
+        </fieldset>
+    </form>
+</div>
+

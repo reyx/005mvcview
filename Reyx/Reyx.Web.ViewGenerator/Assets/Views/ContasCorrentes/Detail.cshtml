@@ -1,0 +1,42 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/contascorrentes.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Contas Correntes</legend>
+    @Html.Hidden("ID_CTCR")
+        <div class="control-group">
+            <label class="control-label" for="ID_AGEN">Id Agen</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_AGEN)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CONTA_CTCR">Conta Ctcr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CONTA_CTCR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="NOME_CTCR">Nome Ctcr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.NOME_CTCR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="SALDOATU_CTCR">Saldoatu Ctcr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.SALDOATU_CTCR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CNAB_CTCR">Cnab Ctcr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CNAB_CTCR)
+            </div>
+        </div>
+    </fieldset>
+</form>

@@ -1,0 +1,24 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/marcasecf.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Marcas Ecf</legend>
+    @Html.Hidden("ID_MECF")
+        <div class="control-group">
+            <label class="control-label" for="DESC_MECF">Desc Mecf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESC_MECF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="OBS_MECF">Obs Mecf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.OBS_MECF)
+            </div>
+        </div>
+    </fieldset>
+</form>

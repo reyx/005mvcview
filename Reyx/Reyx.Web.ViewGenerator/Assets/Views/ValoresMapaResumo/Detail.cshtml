@@ -1,0 +1,36 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/valoresmaparesumo.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Valores Mapa Resumo</legend>
+    @Html.Hidden("ID_VLMR")
+        <div class="control-group">
+            <label class="control-label" for="ID_MPRS">Id Mprs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_MPRS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_CT">Cod Ct</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_CT)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VALORTRIB_MPRS">Valortrib Mprs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VALORTRIB_MPRS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TAXATRIB_MPRS">Taxatrib Mprs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TAXATRIB_MPRS)
+            </div>
+        </div>
+    </fieldset>
+</form>

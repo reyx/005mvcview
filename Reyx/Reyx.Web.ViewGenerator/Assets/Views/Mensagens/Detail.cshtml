@@ -1,0 +1,102 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/mensagens.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Mensagens</legend>
+    @Html.Hidden("ID_MSG")
+        <div class="control-group">
+            <label class="control-label" for="TELA_MSG">Tela Msg</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TELA_MSG)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QTDEXIB_MSG">Qtdexib Msg</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QTDEXIB_MSG)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="INTERVALO_MSG">Intervalo Msg</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.INTERVALO_MSG)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DATAINI_MSG">Dataini Msg</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DATAINI_MSG)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DATAFIN_MSG">Datafin Msg</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DATAFIN_MSG)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="FECHAR_MSG">Fechar Msg</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.FECHAR_MSG)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TEMPO_MSG">Tempo Msg</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TEMPO_MSG)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="EMITENTE_MSG">Emitente Msg</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.EMITENTE_MSG)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="MENSAGEM_MSG">Mensagem Msg</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.MENSAGEM_MSG)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PESQUISA_MSG">Pesquisa Msg</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PESQUISA_MSG)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="MINRESP_MSG">Minresp Msg</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.MINRESP_MSG)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="MAXRESP_MSG">Maxresp Msg</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.MAXRESP_MSG)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="OPCOES_MSG">Opcoes Msg</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.OPCOES_MSG)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_LOJA">Cod Loja</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_LOJA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_VLGR">Id Vlgr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_VLGR)
+            </div>
+        </div>
+    </fieldset>
+</form>

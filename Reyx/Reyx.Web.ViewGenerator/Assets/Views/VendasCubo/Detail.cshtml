@@ -1,0 +1,84 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/vendascubo.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Vendas Cubo</legend>
+    @Html.Hidden("ID_VDCB")
+        <div class="control-group">
+            <label class="control-label" for="COD_LOJA">Cod Loja</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_LOJA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VLRMERC_VDA">Vlrmerc Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VLRMERC_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DESCONTO_VDA">Desconto Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESCONTO_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ACRESCIMO_VDA">Acrescimo Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ACRESCIMO_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TXENTR_VDA">Txentr Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TXENTR_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="SERVICO_VDA">Servico Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.SERVICO_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="IPI_VDA">Ipi Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.IPI_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BASEICMS_VDA">Baseicms Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BASEICMS_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ICMS_VDA">Icms Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ICMS_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PESSOAS_VDA">Pessoas Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PESSOAS_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DATA_VDA">Data Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DATA_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DEVOLUCAO_ITVD">Devolucao Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DEVOLUCAO_ITVD)
+            </div>
+        </div>
+    </fieldset>
+</form>

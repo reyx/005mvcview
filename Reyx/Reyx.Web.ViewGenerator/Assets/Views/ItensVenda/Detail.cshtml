@@ -1,0 +1,708 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/itensvenda.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Itens Venda</legend>
+    @Html.Hidden("ID_ITVD")
+        <div class="control-group">
+            <label class="control-label" for="ID_VLPR">Id Vlpr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_VLPR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_VDA">Id Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_ITNF">Id Itnf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_ITNF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_VEND">Cod Vend</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_VEND)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_PDLS">Id Pdls</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_PDLS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CFOP_NTOP">Cfop Ntop</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CFOP_NTOP)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ITEM_ITVD">Item Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ITEM_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QTDE_ITVD">Qtde Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QTDE_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PRECO_ITVD">Preco Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PRECO_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ENTREGUE_ITVD">Entregue Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ENTREGUE_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QTDEENT_ITVD">Qtdeent Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QTDEENT_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COMANDA_ITVD">Comanda Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COMANDA_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="HORA_ITVD">Hora Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.HORA_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DESCONTO_ITVD">Desconto Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESCONTO_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="SEGURO_ITVD">Seguro Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.SEGURO_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="FRETE_ITVD">Frete Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.FRETE_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DESP_ACESSORIA_ITVD">Desp Acessoria Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESP_ACESSORIA_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ICMS_ITVD">Icms Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ICMS_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BICMS_ITVD">Bicms Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BICMS_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="OICMS_ITVD">Oicms Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.OICMS_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="MICMS_ITVD">Micms Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.MICMS_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PICMS_ITVD">Picms Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PICMS_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QICMS_ITVD">Qicms Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QICMS_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="SICMS_ITVD">Sicms Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.SICMS_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TICMS_ITVD">Ticms Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TICMS_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VICMS_ITVD">Vicms Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VICMS_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BICMSST_ITVD">Bicmsst Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BICMSST_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ICMSST_ITVD">Icmsst Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ICMSST_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PICMSST_ITVD">Picmsst Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PICMSST_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QICMSST_ITVD">Qicmsst Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QICMSST_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TICMSST_ITVD">Ticmsst Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TICMSST_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VICMSST_ITVD">Vicmsst Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VICMSST_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PIS_ITVD">Pis Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PIS_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BPIS_ITVD">Bpis Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BPIS_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PPIS_ITVD">Ppis Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PPIS_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QPIS_ITVD">Qpis Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QPIS_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TPIS_ITVD">Tpis Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TPIS_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VPIS_ITVD">Vpis Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VPIS_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PISST_ITVD">Pisst Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PISST_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BPISST_ITVD">Bpisst Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BPISST_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PPISST_ITVD">Ppisst Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PPISST_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QPISST_ITVD">Qpisst Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QPISST_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VPISST_ITVD">Vpisst Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VPISST_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TPISST_ITVD">Tpisst Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TPISST_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COFINS_ITVD">Cofins Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COFINS_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PCOFINS_ITVD">Pcofins Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PCOFINS_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QCOFINS_ITVD">Qcofins Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QCOFINS_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VCOFINS_ITVD">Vcofins Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VCOFINS_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BCOFINS_ITVD">Bcofins Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BCOFINS_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TCOFINS_ITVD">Tcofins Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TCOFINS_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COFINSST_ITVD">Cofinsst Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COFINSST_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PCOFINSST_ITVD">Pcofinsst Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PCOFINSST_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QCOFINSST_ITVD">Qcofinsst Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QCOFINSST_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VCOFINSST_ITVD">Vcofinsst Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VCOFINSST_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BCOFINSST_ITVD">Bcofinsst Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BCOFINSST_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TCOFINSST_ITVD">Tcofinsst Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TCOFINSST_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="IPI_ITVD">Ipi Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.IPI_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PIPI_ITVD">Pipi Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PIPI_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QIPI_ITVD">Qipi Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QIPI_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VIPI_ITVD">Vipi Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VIPI_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BIPI_ITVD">Bipi Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BIPI_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TIPI_ITVD">Tipi Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TIPI_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="IPIST_ITVD">Ipist Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.IPIST_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PIPIST_ITVD">Pipist Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PIPIST_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QIPIST_ITVD">Qipist Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QIPIST_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VIPIST_ITVD">Vipist Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VIPIST_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BIPIST_ITVD">Bipist Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BIPIST_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TIPIST_ITVD">Tipist Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TIPIST_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ISSQN_ITVD">Issqn Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ISSQN_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PISSQN_ITVD">Pissqn Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PISSQN_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QISSQN_ITVD">Qissqn Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QISSQN_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VISSQN_ITVD">Vissqn Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VISSQN_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BISSQN_ITVD">Bissqn Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BISSQN_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TISSQN_ITVD">Tissqn Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TISSQN_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ISSQNST_ITVD">Issqnst Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ISSQNST_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PISSQNST_ITVD">Pissqnst Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PISSQNST_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QISSQNST_ITVD">Qissqnst Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QISSQNST_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VISSQNST_ITVD">Vissqnst Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VISSQNST_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BISSQNST_ITVD">Bissqnst Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BISSQNST_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TISSQNST_ITVD">Tissqnst Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TISSQNST_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="RICMS_ITVD">Ricms Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.RICMS_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ROPICMS_ITVD">Ropicms Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ROPICMS_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="MOTDESICMS_ITVD">Motdesicms Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.MOTDESICMS_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PCREDICMS_ITVD">Pcredicms Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PCREDICMS_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CREDITOICMS_ITVD">Creditoicms Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CREDITOICMS_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BICMSRETIDO_ITVD">Bicmsretido Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BICMSRETIDO_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ICMSRETIDO_ITVD">Icmsretido Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ICMSRETIDO_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="MICMSST_ITVD">Micmsst Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.MICMSST_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="RICMSST_ITVD">Ricmsst Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.RICMSST_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="MVAICMSST_ITVD">Mvaicmsst Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.MVAICMSST_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ICMSST_ID_UF_ITVD">Icmsst Id Uf Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ICMSST_ID_UF_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BICMSST_UF_REM_ITVD">Bicmsst Uf Rem Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BICMSST_UF_REM_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ICMSST_UF_REM_ITVD">Icmsst Uf Rem Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ICMSST_UF_REM_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BICMSST_UF_DEST_ITVD">Bicmsst Uf Dest Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BICMSST_UF_DEST_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ICMSST_UF_DEST_ITVD">Icmsst Uf Dest Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ICMSST_UF_DEST_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BICMSST_RETIDO_ITVD">Bicmsst Retido Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BICMSST_RETIDO_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ICMSST_RETIDO_ITVD">Icmsst Retido Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ICMSST_RETIDO_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="OPICMS_ITVD">Opicms Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.OPICMS_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="SCOFINS_ITVD">Scofins Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.SCOFINS_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="SPIS_ITVD">Spis Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.SPIS_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="IPIPESO_ITVD">Ipipeso Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.IPIPESO_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="SIPI_ITVD">Sipi Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.SIPI_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="SELOIPI_ITVD">Seloipi Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.SELOIPI_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QSELOIPI_ITVD">Qseloipi Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QSELOIPI_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ENQIPI_ITVD">Enqipi Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ENQIPI_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CENQIPI_ITVD">Cenqipi Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CENQIPI_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CNPJIPI_ITVD">Cnpjipi Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CNPJIPI_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BII_ITVD">Bii Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BII_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DESPADUII_ITVD">Despaduii Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESPADUII_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="IOFII_ITVD">Iofii Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.IOFII_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="II_ITVD">Ii Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.II_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_CID_ISSQN_ITVD">Id Cid Issqn Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_CID_ISSQN_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VLRMERC_ITVD">Vlrmerc Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VLRMERC_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VLRTOT_ITVD">Vlrtot Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VLRTOT_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="INDTOT_ITVD">Indtot Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.INDTOT_ITVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="INFOADI_ITVD">Infoadi Itvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.INFOADI_ITVD)
+            </div>
+        </div>
+    </fieldset>
+</form>

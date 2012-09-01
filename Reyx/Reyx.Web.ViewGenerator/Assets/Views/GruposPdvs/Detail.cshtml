@@ -1,0 +1,18 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/grupospdvs.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Grupos Pdvs</legend>
+    @Html.Hidden("COD_GRPD")
+        <div class="control-group">
+            <label class="control-label" for="DESC_GRPD">Desc Grpd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESC_GRPD)
+            </div>
+        </div>
+    </fieldset>
+</form>

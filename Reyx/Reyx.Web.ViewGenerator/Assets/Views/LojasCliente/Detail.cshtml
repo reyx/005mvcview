@@ -1,0 +1,30 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/lojascliente.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Lojas Cliente</legend>
+    @Html.Hidden("ID_LJCL")
+        <div class="control-group">
+            <label class="control-label" for="COD_LOJA">Cod Loja</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_LOJA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_CLI">Cod Cli</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_CLI)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_SITU">Cod Situ</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_SITU)
+            </div>
+        </div>
+    </fieldset>
+</form>

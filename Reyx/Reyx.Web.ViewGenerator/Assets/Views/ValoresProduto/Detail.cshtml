@@ -1,0 +1,36 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/valoresproduto.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Valores Produto</legend>
+    @Html.Hidden("ID_VLPR")
+        <div class="control-group">
+            <label class="control-label" for="COD_PROD">Cod Prod</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_PROD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_VLPR01">Id Vlpr01</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_VLPR01)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_VLPR02">Id Vlpr02</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_VLPR02)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_VLPR03">Id Vlpr03</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_VLPR03)
+            </div>
+        </div>
+    </fieldset>
+</form>

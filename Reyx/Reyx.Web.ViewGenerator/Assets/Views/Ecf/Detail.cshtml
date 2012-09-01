@@ -1,0 +1,60 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/ecf.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Ecf</legend>
+    @Html.Hidden("ID_ECF")
+        <div class="control-group">
+            <label class="control-label" for="ID_MDEC">Id Mdec</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_MDEC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="SERIE_ECF">Serie Ecf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.SERIE_ECF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="NUMERO_ECF">Numero Ecf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.NUMERO_ECF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CALC_ECF">Calc Ecf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CALC_ECF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="GRPSANGRIA_ECF">Grpsangria Ecf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.GRPSANGRIA_ECF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CODSANGRIA_ECF">Codsangria Ecf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CODSANGRIA_ECF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="GRPDEPOS_ECF">Grpdepos Ecf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.GRPDEPOS_ECF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CODDEPOS_ECF">Coddepos Ecf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CODDEPOS_ECF)
+            </div>
+        </div>
+    </fieldset>
+</form>

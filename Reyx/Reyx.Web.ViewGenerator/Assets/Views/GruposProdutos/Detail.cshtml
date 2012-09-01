@@ -1,0 +1,23 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/gruposprodutos.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Grupos Produtos</legend>
+        <div class="control-group">
+            <label class="control-label" for="COD_GRPR">Cod Grpr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_GRPR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DESC_GRPR">Desc Grpr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESC_GRPR)
+            </div>
+        </div>
+    </fieldset>
+</form>

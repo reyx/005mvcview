@@ -1,0 +1,396 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/vendas.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Vendas</legend>
+    @Html.Hidden("ID_VDA")
+        <div class="control-group">
+            <label class="control-label" for="NUMERO_VDA">Numero Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.NUMERO_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="NOTA_VDA">Nota Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.NOTA_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TIPOOPER_VDA">Tipooper Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TIPOOPER_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_CDPG">Cod Cdpg</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_CDPG)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_CLI">Cod Cli</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_CLI)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_ENTR">Cod Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_LOJA">Cod Loja</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_LOJA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_VEND">Cod Vend</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_VEND)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_MVPD">Id Mvpd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_MVPD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CFOP_NTOP">Cfop Ntop</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CFOP_NTOP)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_OPER">Id Oper</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_OPER)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_OPER_AUTO">Id Oper Auto</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_OPER_AUTO)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_ENPS_LOJA_VDA">Id Enps Loja Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_ENPS_LOJA_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_ENPS_CLI_VDA">Id Enps Cli Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_ENPS_CLI_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_ENPS_TRAN_VDA">Id Enps Tran Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_ENPS_TRAN_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_ENPS_ENT_VDA">Id Enps Ent Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_ENPS_ENT_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_ENPS_RET_VDA">Id Enps Ret Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_ENPS_RET_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_VOL">Id Vol</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_VOL)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DATA_VDA">Data Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DATA_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VLRMERC_VDA">Vlrmerc Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VLRMERC_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DESCONTO_VDA">Desconto Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESCONTO_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ACRESCIMO_VDA">Acrescimo Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ACRESCIMO_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TXENTR_VDA">Txentr Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TXENTR_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="SERVICO_VDA">Servico Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.SERVICO_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="MODFRETE_VDA">Modfrete Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.MODFRETE_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PESSOAS_VDA">Pessoas Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PESSOAS_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COMANDA_VDA">Comanda Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COMANDA_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="STATUS_VDA">Status Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.STATUS_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="FRETE_VDA">Frete Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.FRETE_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="SEGURO_VDA">Seguro Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.SEGURO_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BICMS_VDA">Bicms Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BICMS_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ICMS_VDA">Icms Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ICMS_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BICMSST_VDA">Bicmsst Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BICMSST_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ICMSST_VDA">Icmsst Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ICMSST_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PIS_VDA">Pis Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PIS_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COFINS_VDA">Cofins Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COFINS_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="IPI_VDA">Ipi Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.IPI_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BISSQN_VDA">Bissqn Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BISSQN_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ISSQN_VDA">Issqn Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ISSQN_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="II_VDA">Ii Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.II_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VLRTOT_VDA">Vlrtot Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VLRTOT_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BIRRF_VDA">Birrf Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BIRRF_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BPREV_VDA">Bprev Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BPREV_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="IRRF_VDA">Irrf Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.IRRF_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="RCOFINS_VDA">Rcofins Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.RCOFINS_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="RCSLL_VDA">Rcsll Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.RCSLL_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="RPIS_VDA">Rpis Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.RPIS_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="RPREV_VDA">Rprev Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.RPREV_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DESP_ACESSORIA_VDA">Desp Acessoria Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESP_ACESSORIA_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_TRAN">Cod Tran</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_TRAN)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CFOP_NTOP_TRAN_VDA">Cfop Ntop Tran Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CFOP_NTOP_TRAN_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ICMS_TRAN_VDA">Icms Tran Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ICMS_TRAN_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BASECALC_TRAN_VDA">Basecalc Tran Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BASECALC_TRAN_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ALIQ_TRAN_VDA">Aliq Tran Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ALIQ_TRAN_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VALOR_TRAN_VDA">Valor Tran Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VALOR_TRAN_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PESOLIQ_VDA">Pesoliq Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PESOLIQ_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PESOBRT_VDA">Pesobrt Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PESOBRT_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PREV_VDA">Prev Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PREV_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PISRETIDO_VDA">Pisretido Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PISRETIDO_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COFINSRETIDO_VDA">Cofinsretido Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COFINSRETIDO_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CSLL_VDA">Csll Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CSLL_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PISISSQN_VDA">Pisissqn Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PISISSQN_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COFINSISSQN_VDA">Cofinsissqn Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COFINSISSQN_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VLRTOTISSQN_VDA">Vlrtotissqn Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VLRTOTISSQN_VDA)
+            </div>
+        </div>
+    </fieldset>
+</form>

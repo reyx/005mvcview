@@ -1,0 +1,552 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/itenspedidocompra.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Itens Pedido Compra</legend>
+    @Html.Hidden("ID_ITPC")
+        <div class="control-group">
+            <label class="control-label" for="ID_PDCP">Id Pdcp</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_PDCP)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_VLPR">Id Vlpr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_VLPR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_PDLS">Id Pdls</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_PDLS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_VEND">Cod Vend</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_VEND)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_LCES">Cod Lces</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_LCES)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CFOP_NTOP">Cfop Ntop</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CFOP_NTOP)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_ORIG">Id Orig</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_ORIG)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_UF_OP_ITPC">Id Uf Op Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_UF_OP_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_SITB_ICMS">Id Sitb Icms</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_SITB_ICMS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_SITB_IPI">Id Sitb Ipi</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_SITB_IPI)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_SITB_PIS">Id Sitb Pis</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_SITB_PIS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_SITB_COFINS">Id Sitb Cofins</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_SITB_COFINS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_MDPD">Id Mdpd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_MDPD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_MDPD_ST">Id Mdpd St</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_MDPD_ST)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_MDSP">Id Mdsp</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_MDSP)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_CID_ISSQN_ITPC">Id Cid Issqn Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_CID_ISSQN_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ITEM_ITPC">Item Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ITEM_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TIPO_ITPC">Tipo Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TIPO_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COMANDA_ITPC">Comanda Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COMANDA_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="HORA_ITPC">Hora Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.HORA_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QTDE_ITPC">Qtde Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QTDE_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="FATURADO_ITPC">Faturado Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.FATURADO_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PRECO_ITPC">Preco Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PRECO_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DESCONTO_ITPC">Desconto Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESCONTO_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="FRETE_ITPC">Frete Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.FRETE_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="SEGURO_ITPC">Seguro Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.SEGURO_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DESP_ACESSORIA_ITPC">Desp Acessoria Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESP_ACESSORIA_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CONDICIONAL_ITPC">Condicional Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CONDICIONAL_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PROP_DESCONTO_ITPC">Prop Desconto Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PROP_DESCONTO_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PADRAO_DESCONTO_ITPC">Padrao Desconto Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PADRAO_DESCONTO_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="INDTOT_ITPC">Indtot Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.INDTOT_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BICMS_ITPC">Bicms Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BICMS_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PICMS_ITPC">Picms Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PICMS_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ICMS_ITPC">Icms Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ICMS_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="RICMS_ITPC">Ricms Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.RICMS_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BOPICMS_ITPC">Bopicms Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BOPICMS_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="RICMSST_ITPC">Ricmsst Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.RICMSST_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="MVA_ICMSST_ITPC">Mva Icmsst Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.MVA_ICMSST_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BICMSST_ITPC">Bicmsst Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BICMSST_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PICMSST_ITPC">Picmsst Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PICMSST_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ICMSST_ITPC">Icmsst Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ICMSST_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BICMSST_UF_EMIT_ITPC">Bicmsst Uf Emit Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BICMSST_UF_EMIT_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ICMSST_UF_EMIT_ITPC">Icmsst Uf Emit Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ICMSST_UF_EMIT_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BICMSST_UF_DEST_ITPC">Bicmsst Uf Dest Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BICMSST_UF_DEST_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ICMSST_UF_DEST_ITPC">Icmsst Uf Dest Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ICMSST_UF_DEST_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BICMSST_ANT_ITPC">Bicmsst Ant Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BICMSST_ANT_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ICMSST_ANT_ITPC">Icmsst Ant Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ICMSST_ANT_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="SELO_IPI_ITPC">Selo Ipi Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.SELO_IPI_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QSELO_IPI_ITPC">Qselo Ipi Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QSELO_IPI_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ENQ_IPI_ITPC">Enq Ipi Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ENQ_IPI_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CNPJ_PRODUTOR_IPI_ITPC">Cnpj Produtor Ipi Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CNPJ_PRODUTOR_IPI_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CALCULO_IPI">Calculo Ipi</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CALCULO_IPI)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BIPI_ITPC">Bipi Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BIPI_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PIPI_ITPC">Pipi Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PIPI_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QIPI_ITPC">Qipi Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QIPI_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VIPI_ITPC">Vipi Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VIPI_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="IPI_ITPC">Ipi Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.IPI_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CALCULO_PIS">Calculo Pis</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CALCULO_PIS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BPIS_ITPC">Bpis Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BPIS_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PPIS_ITPC">Ppis Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PPIS_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QPIS_ITPC">Qpis Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QPIS_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PIS_ITPC">Pis Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PIS_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CALCULO_PISST">Calculo Pisst</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CALCULO_PISST)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BPISST_ITPC">Bpisst Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BPISST_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PPISST_ITPC">Ppisst Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PPISST_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QPISST_ITPC">Qpisst Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QPISST_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PISST_ITPC">Pisst Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PISST_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CALCULO_COFINS">Calculo Cofins</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CALCULO_COFINS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BCOFINS_ITPC">Bcofins Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BCOFINS_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PCOFINS_ITPC">Pcofins Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PCOFINS_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QCOFINS_ITPC">Qcofins Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QCOFINS_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COFINS_ITPC">Cofins Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COFINS_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CALCULO_COFINSST">Calculo Cofinsst</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CALCULO_COFINSST)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BCOFINSST_ITPC">Bcofinsst Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BCOFINSST_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PCOFINSST_ITPC">Pcofinsst Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PCOFINSST_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QCOFINSST_ITPC">Qcofinsst Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QCOFINSST_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COFINSST_ITPC">Cofinsst Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COFINSST_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BII_ITPC">Bii Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BII_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ADUII_ITPC">Aduii Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ADUII_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="IOFII_ITPC">Iofii Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.IOFII_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="II_ITPC">Ii Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.II_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="OBS_ITPC">Obs Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.OBS_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TISSQN_ITPC">Tissqn Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TISSQN_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BISSQNST_ITPC">Bissqnst Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BISSQNST_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PISSQNST_ITPC">Pissqnst Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PISSQNST_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ISSQN_ITPC">Issqn Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ISSQN_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VLRMERC_ITPC">Vlrmerc Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VLRMERC_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VLRTOT_ITPC">Vlrtot Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VLRTOT_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QTDE_FATURADA_ITPC">Qtde Faturada Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QTDE_FATURADA_ITPC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QTDE_FATURAR_ITPC">Qtde Faturar Itpc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QTDE_FATURAR_ITPC)
+            </div>
+        </div>
+    </fieldset>
+</form>

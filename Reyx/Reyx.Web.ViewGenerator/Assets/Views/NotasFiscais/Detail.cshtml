@@ -1,0 +1,450 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/notasfiscais.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Notas Fiscais</legend>
+    @Html.Hidden("ID_NF")
+        <div class="control-group">
+            <label class="control-label" for="NUMERO_NF">Numero Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.NUMERO_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CHAVE_NF">Chave Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CHAVE_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DV_NF">Dv Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DV_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CHAVENFE_NF">Chavenfe Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CHAVENFE_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="MODELO_NF">Modelo Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.MODELO_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TIPOOP_NF">Tipoop Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TIPOOP_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TIPOEMISSAO_NF">Tipoemissao Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TIPOEMISSAO_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="AMBIENTE_NF">Ambiente Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.AMBIENTE_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="FINALIDADE_NF">Finalidade Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.FINALIDADE_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TIPODANFE_NF">Tipodanfe Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TIPODANFE_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VERSAO_NF">Versao Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VERSAO_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VERSAOMR_NF">Versaomr Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VERSAOMR_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_SRNF">Id Srnf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_SRNF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_LOJA">Cod Loja</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_LOJA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_CLI">Cod Cli</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_CLI)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_FORN">Cod Forn</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_FORN)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CFOP_NTOP">Cfop Ntop</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CFOP_NTOP)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CFOP_NTOP_TRAN_NF">Cfop Ntop Tran Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CFOP_NTOP_TRAN_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_OPER">Id Oper</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_OPER)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_ENTR">Id Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_VDA">Id Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_CDPG">Cod Cdpg</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_CDPG)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_VEND">Cod Vend</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_VEND)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_TRAN">Cod Tran</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_TRAN)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_VEIC">Id Veic</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_VEIC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_CID">Id Cid</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_CID)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DATA_NF">Data Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DATA_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="EMISSAO_NF">Emissao Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.EMISSAO_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="SAIENT_NF">Saient Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.SAIENT_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CONDICIONAL_NF">Condicional Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CONDICIONAL_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BICMS_NF">Bicms Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BICMS_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ICMS_NF">Icms Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ICMS_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BICMSST_NF">Bicmsst Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BICMSST_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ICMSST_NF">Icmsst Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ICMSST_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="IPI_NF">Ipi Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.IPI_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="IPIST_NF">Ipist Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.IPIST_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PIS_NF">Pis Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PIS_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PISST_NF">Pisst Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PISST_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COFINS_NF">Cofins Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COFINS_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COFINSST_NF">Cofinsst Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COFINSST_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VLRMERC_NF">Vlrmerc Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VLRMERC_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="FRETE_NF">Frete Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.FRETE_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="SEGURO_NF">Seguro Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.SEGURO_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DESCONTO_NF">Desconto Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESCONTO_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DESP_ACESSORIA_NF">Desp Acessoria Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESP_ACESSORIA_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VLRTOT_NF">Vlrtot Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VLRTOT_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="MENSAGEM_NF">Mensagem Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.MENSAGEM_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="OBS_NF">Obs Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.OBS_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="STATUS_NF">Status Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.STATUS_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_ENPS_CLI_NF">Id Enps Cli Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_ENPS_CLI_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_ENPS_ENT_NF">Id Enps Ent Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_ENPS_ENT_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_ENPS_LOJA_NF">Id Enps Loja Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_ENPS_LOJA_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_ENPS_RET_NF">Id Enps Ret Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_ENPS_RET_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_ENPS_TRAN_NF">Id Enps Tran Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_ENPS_TRAN_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="II_NF">Ii Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.II_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BIRRF_NF">Birrf Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BIRRF_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="IRRF_NF">Irrf Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.IRRF_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BPREV_NF">Bprev Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BPREV_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PREV_NF">Prev Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PREV_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="RIPI_NF">Ripi Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.RIPI_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="RPIS_NF">Rpis Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.RPIS_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="RCOFINS_NF">Rcofins Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.RCOFINS_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="RCSLL_NF">Rcsll Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.RCSLL_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="MODFRETE_NF">Modfrete Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.MODFRETE_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BICMS_TRAN_NF">Bicms Tran Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BICMS_TRAN_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PICMS_TRAN_NF">Picms Tran Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PICMS_TRAN_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ICMS_TRAN_NF">Icms Tran Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ICMS_TRAN_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VALOR_TRAN_NF">Valor Tran Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VALOR_TRAN_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PESOLIQ_NF">Pesoliq Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PESOLIQ_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PESOBRT_NF">Pesobrt Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PESOBRT_NF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PROC_NFE">Proc Nfe</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PROC_NFE)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PROCCANC_NFE">Proccanc Nfe</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PROCCANC_NFE)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PROCINUT_NFE">Procinut Nfe</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PROCINUT_NFE)
+            </div>
+        </div>
+    </fieldset>
+</form>

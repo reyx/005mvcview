@@ -1,0 +1,738 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/itensfiscais.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Itens Fiscais</legend>
+    @Html.Hidden("ID_ITFS")
+        <div class="control-group">
+            <label class="control-label" for="ID_VLPR">Id Vlpr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_VLPR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_PDLS">Id Pdls</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_PDLS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CFOP_NTOP">Cfop Ntop</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CFOP_NTOP)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_VEND">Cod Vend</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_VEND)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_LCES">Cod Lces</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_LCES)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ITEM_ITFS">Item Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ITEM_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QTDE_ITFS">Qtde Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QTDE_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PRECO_ITFS">Preco Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PRECO_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ENTREGUE_ITFS">Entregue Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ENTREGUE_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QTDEENT_ITFS">Qtdeent Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QTDEENT_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COMANDA_ITFS">Comanda Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COMANDA_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="HORA_ITFS">Hora Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.HORA_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DESCONTO_ITFS">Desconto Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESCONTO_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="SEGURO_ITFS">Seguro Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.SEGURO_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="FRETE_ITFS">Frete Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.FRETE_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DESP_ACESSORIA_ITFS">Desp Acessoria Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESP_ACESSORIA_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ICMS_ITFS">Icms Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ICMS_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BICMS_ITFS">Bicms Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BICMS_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="OICMS_ITFS">Oicms Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.OICMS_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="MICMS_ITFS">Micms Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.MICMS_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PICMS_ITFS">Picms Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PICMS_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QICMS_ITFS">Qicms Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QICMS_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="SICMS_ITFS">Sicms Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.SICMS_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TICMS_ITFS">Ticms Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TICMS_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VICMS_ITFS">Vicms Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VICMS_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BICMSST_ITFS">Bicmsst Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BICMSST_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ICMSST_ITFS">Icmsst Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ICMSST_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PICMSST_ITFS">Picmsst Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PICMSST_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QICMSST_ITFS">Qicmsst Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QICMSST_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TICMSST_ITFS">Ticmsst Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TICMSST_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VICMSST_ITFS">Vicmsst Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VICMSST_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PIS_ITFS">Pis Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PIS_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BPIS_ITFS">Bpis Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BPIS_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PPIS_ITFS">Ppis Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PPIS_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QPIS_ITFS">Qpis Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QPIS_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TPIS_ITFS">Tpis Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TPIS_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VPIS_ITFS">Vpis Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VPIS_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PISST_ITFS">Pisst Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PISST_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BPISST_ITFS">Bpisst Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BPISST_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PPISST_ITFS">Ppisst Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PPISST_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QPISST_ITFS">Qpisst Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QPISST_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VPISST_ITFS">Vpisst Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VPISST_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TPISST_ITFS">Tpisst Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TPISST_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COFINS_ITFS">Cofins Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COFINS_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PCOFINS_ITFS">Pcofins Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PCOFINS_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QCOFINS_ITFS">Qcofins Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QCOFINS_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VCOFINS_ITFS">Vcofins Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VCOFINS_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BCOFINS_ITFS">Bcofins Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BCOFINS_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TCOFINS_ITFS">Tcofins Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TCOFINS_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COFINSST_ITFS">Cofinsst Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COFINSST_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PCOFINSST_ITFS">Pcofinsst Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PCOFINSST_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QCOFINSST_ITFS">Qcofinsst Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QCOFINSST_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VCOFINSST_ITFS">Vcofinsst Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VCOFINSST_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BCOFINSST_ITFS">Bcofinsst Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BCOFINSST_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TCOFINSST_ITFS">Tcofinsst Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TCOFINSST_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="IPI_ITFS">Ipi Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.IPI_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PIPI_ITFS">Pipi Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PIPI_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QIPI_ITFS">Qipi Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QIPI_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VIPI_ITFS">Vipi Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VIPI_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BIPI_ITFS">Bipi Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BIPI_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TIPI_ITFS">Tipi Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TIPI_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="IPIST_ITFS">Ipist Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.IPIST_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PIPIST_ITFS">Pipist Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PIPIST_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QIPIST_ITFS">Qipist Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QIPIST_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VIPIST_ITFS">Vipist Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VIPIST_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BIPIST_ITFS">Bipist Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BIPIST_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TIPIST_ITFS">Tipist Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TIPIST_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ISSQN_ITFS">Issqn Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ISSQN_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PISSQN_ITFS">Pissqn Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PISSQN_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QISSQN_ITFS">Qissqn Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QISSQN_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VISSQN_ITFS">Vissqn Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VISSQN_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BISSQN_ITFS">Bissqn Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BISSQN_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TISSQN_ITFS">Tissqn Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TISSQN_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ISSQNST_ITFS">Issqnst Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ISSQNST_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PISSQNST_ITFS">Pissqnst Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PISSQNST_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QISSQNST_ITFS">Qissqnst Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QISSQNST_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VISSQNST_ITFS">Vissqnst Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VISSQNST_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BISSQNST_ITFS">Bissqnst Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BISSQNST_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TISSQNST_ITFS">Tissqnst Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TISSQNST_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="RICMS_ITFS">Ricms Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.RICMS_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ROPICMS_ITFS">Ropicms Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ROPICMS_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="MOTDESICMS_ITFS">Motdesicms Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.MOTDESICMS_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PCREDICMS_ITFS">Pcredicms Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PCREDICMS_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CREDITOICMS_ITFS">Creditoicms Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CREDITOICMS_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BICMSRETIDO_ITFS">Bicmsretido Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BICMSRETIDO_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ICMSRETIDO_ITFS">Icmsretido Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ICMSRETIDO_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="MICMSST_ITFS">Micmsst Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.MICMSST_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="RICMSST_ITFS">Ricmsst Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.RICMSST_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="MVAICMSST_ITFS">Mvaicmsst Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.MVAICMSST_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ICMSST_ID_UF_ITFS">Icmsst Id Uf Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ICMSST_ID_UF_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BICMSST_UF_REM_ITFS">Bicmsst Uf Rem Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BICMSST_UF_REM_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ICMSST_UF_REM_ITFS">Icmsst Uf Rem Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ICMSST_UF_REM_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BICMSST_UF_DEST_ITFS">Bicmsst Uf Dest Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BICMSST_UF_DEST_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ICMSST_UF_DEST_ITFS">Icmsst Uf Dest Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ICMSST_UF_DEST_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BICMSST_RETIDO_ITFS">Bicmsst Retido Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BICMSST_RETIDO_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ICMSST_RETIDO_ITFS">Icmsst Retido Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ICMSST_RETIDO_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="OPICMS_ITFS">Opicms Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.OPICMS_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="SCOFINS_ITFS">Scofins Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.SCOFINS_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="SPIS_ITFS">Spis Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.SPIS_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="IPIPESO_ITFS">Ipipeso Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.IPIPESO_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="SIPI_ITFS">Sipi Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.SIPI_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="SELOIPI_ITFS">Seloipi Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.SELOIPI_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QSELOIPI_ITFS">Qseloipi Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QSELOIPI_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ENQIPI_ITFS">Enqipi Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ENQIPI_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CENQIPI_ITFS">Cenqipi Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CENQIPI_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CNPJIPI_ITFS">Cnpjipi Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CNPJIPI_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BII_ITFS">Bii Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BII_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DESPADUII_ITFS">Despaduii Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESPADUII_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="IOFII_ITFS">Iofii Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.IOFII_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="II_ITFS">Ii Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.II_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_CID_ISSQN_ITFS">Id Cid Issqn Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_CID_ISSQN_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VLRMERC_ITFS">Vlrmerc Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VLRMERC_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VLRTOT_ITFS">Vlrtot Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VLRTOT_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="INDTOT_ITFS">Indtot Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.INDTOT_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="INFOADI_ITFS">Infoadi Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.INFOADI_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QTDE_FATURADA_ITFS">Qtde Faturada Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QTDE_FATURADA_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QTDE_FATURAR_ITFS">Qtde Faturar Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QTDE_FATURAR_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TIPOESPECIFICO_ITFS">Tipoespecifico Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TIPOESPECIFICO_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CONDICIONAL_ITFS">Condicional Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CONDICIONAL_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PROP_DESCONTO_ITFS">Prop Desconto Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PROP_DESCONTO_ITFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PADRAO_DESCONTO_ITFS">Padrao Desconto Itfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PADRAO_DESCONTO_ITFS)
+            </div>
+        </div>
+    </fieldset>
+</form>

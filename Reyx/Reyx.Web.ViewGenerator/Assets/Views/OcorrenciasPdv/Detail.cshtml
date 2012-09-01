@@ -1,0 +1,66 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/ocorrenciaspdv.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Ocorrencias Pdv</legend>
+    @Html.Hidden("ID_OCPD")
+        <div class="control-group">
+            <label class="control-label" for="ID_MVPD">Id Mvpd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_MVPD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_TPOC">Cod Tpoc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_TPOC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_RCPD">Id Rcpd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_RCPD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_OPER_SUP">Cod Oper Sup</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_OPER_SUP)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_TPSG">Cod Tpsg</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_TPSG)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_TPDS">Id Tpds</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_TPDS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VALOR_OCPD">Valor Ocpd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VALOR_OCPD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DATA_OCPD">Data Ocpd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DATA_OCPD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="OBS_OCPD">Obs Ocpd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.OBS_OCPD)
+            </div>
+        </div>
+    </fieldset>
+</form>

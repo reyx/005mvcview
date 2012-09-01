@@ -1,0 +1,36 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/tiposmovimento.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Tipos Movimento</legend>
+    @Html.Hidden("COD_TPMV")
+        <div class="control-group">
+            <label class="control-label" for="DESC_TPMV">Desc Tpmv</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESC_TPMV)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="OPERPROD_TPMV">Operprod Tpmv</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.OPERPROD_TPMV)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="OPERCOMP_TPMV">Opercomp Tpmv</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.OPERCOMP_TPMV)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_TPMV_AS">Cod Tpmv As</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_TPMV_AS)
+            </div>
+        </div>
+    </fieldset>
+</form>

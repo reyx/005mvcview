@@ -1,0 +1,120 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/clientes.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Clientes</legend>
+    @Html.Hidden("COD_CLI")
+        <div class="control-group">
+            <label class="control-label" for="COD_TRAN">Cod Tran</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_TRAN)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_VEND">Cod Vend</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_VEND)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_REG">Cod Reg</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_REG)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_GRCL">Cod Grcl</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_GRCL)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_SITU">Cod Situ</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_SITU)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_IND">Cod Ind</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_IND)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_LISTA">Cod Lista</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_LISTA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_PESSOA">Id Pessoa</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_PESSOA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_LOJA">Cod Loja</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_LOJA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CODCLLJ_CLI">Codcllj Cli</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CODCLLJ_CLI)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ATIVO_CLI">Ativo Cli</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ATIVO_CLI)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DATACAD_CLI">Datacad Cli</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DATACAD_CLI)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DATAULTVIS_CLI">Dataultvis Cli</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DATAULTVIS_CLI)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="INTERESSE_CLI">Interesse Cli</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.INTERESSE_CLI)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CREDITO_CLI">Credito Cli</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CREDITO_CLI)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TXENTR_CLI">Txentr Cli</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TXENTR_CLI)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="LIMITE_CLI">Limite Cli</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.LIMITE_CLI)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CAPTACAO_CLI">Captacao Cli</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CAPTACAO_CLI)
+            </div>
+        </div>
+    </fieldset>
+</form>

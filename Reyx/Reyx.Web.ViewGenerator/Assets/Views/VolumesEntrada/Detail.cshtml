@@ -1,0 +1,24 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/volumesentrada.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Volumes Entrada</legend>
+    @Html.Hidden("ID_VLVD")
+        <div class="control-group">
+            <label class="control-label" for="ID_VOL">Id Vol</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_VOL)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_ENTR">Id Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_ENTR)
+            </div>
+        </div>
+    </fieldset>
+</form>

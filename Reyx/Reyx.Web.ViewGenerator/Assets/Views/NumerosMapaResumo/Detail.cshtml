@@ -1,0 +1,30 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/numerosmaparesumo.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Numeros Mapa Resumo</legend>
+    @Html.Hidden("ID_NMMP")
+        <div class="control-group">
+            <label class="control-label" for="DATA_NMMP">Data Nmmp</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DATA_NMMP)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="NUMERO_NMMP">Numero Nmmp</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.NUMERO_NMMP)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_LOJA">Cod Loja</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_LOJA)
+            </div>
+        </div>
+    </fieldset>
+</form>

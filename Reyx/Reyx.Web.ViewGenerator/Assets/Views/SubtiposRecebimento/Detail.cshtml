@@ -1,0 +1,30 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/subtiposrecebimento.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Subtipos Recebimento</legend>
+    @Html.Hidden("COD_STRC")
+        <div class="control-group">
+            <label class="control-label" for="COD_TPRC">Cod Tprc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_TPRC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DESC_STRC">Desc Strc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESC_STRC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_BAN">Cod Ban</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_BAN)
+            </div>
+        </div>
+    </fieldset>
+</form>

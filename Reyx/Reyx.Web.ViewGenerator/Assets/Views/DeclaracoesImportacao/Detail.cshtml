@@ -1,0 +1,42 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/declaracoesimportacao.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Declaracoes Importacao</legend>
+    @Html.Hidden("ID_DCIM")
+        <div class="control-group">
+            <label class="control-label" for="LOCALDESEMB_DCIM">Localdesemb Dcim</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.LOCALDESEMB_DCIM)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_UF">Id Uf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_UF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DATADESEMB_DCIM">Datadesemb Dcim</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DATADESEMB_DCIM)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_EXPO">Cod Expo</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_EXPO)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_VDA">Id Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_VDA)
+            </div>
+        </div>
+    </fieldset>
+</form>

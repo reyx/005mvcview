@@ -1,0 +1,96 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/layoutboletos.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Layout Boletos</legend>
+    @Html.Hidden("ID_LYBL")
+        <div class="control-group">
+            <label class="control-label" for="COD_BCO">Cod Bco</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_BCO)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_CTCR">Id Ctcr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_CTCR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="LINHA_LYBL">Linha Lybl</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.LINHA_LYBL)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COLUNA_LYBL">Coluna Lybl</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COLUNA_LYBL)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TAMCAR_LYBL">Tamcar Lybl</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TAMCAR_LYBL)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VERTICAL_LYBL">Vertical Lybl</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VERTICAL_LYBL)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="HORIZONTAL_LYBL">Horizontal Lybl</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.HORIZONTAL_LYBL)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TAMMMM_LYBL">Tammmm Lybl</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TAMMMM_LYBL)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TIPOCAR_LYBL">Tipocar Lybl</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TIPOCAR_LYBL)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CAMPO_LYBL">Campo Lybl</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CAMPO_LYBL)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="SOMADIAS_LYBL">Somadias Lybl</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.SOMADIAS_LYBL)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="EXTINI_LYBL">Extini Lybl</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.EXTINI_LYBL)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="EXTTAM_LYBL">Exttam Lybl</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.EXTTAM_LYBL)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TEXTO_LYBL">Texto Lybl</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TEXTO_LYBL)
+            </div>
+        </div>
+    </fieldset>
+</form>

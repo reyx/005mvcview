@@ -1,0 +1,30 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/fonesdialup.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Fones Dialup</legend>
+    @Html.Hidden("ID_FNDU")
+        <div class="control-group">
+            <label class="control-label" for="ID_CID">Id Cid</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_CID)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DDD_FNDU">Ddd Fndu</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DDD_FNDU)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="FONE_FNDU">Fone Fndu</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.FONE_FNDU)
+            </div>
+        </div>
+    </fieldset>
+</form>

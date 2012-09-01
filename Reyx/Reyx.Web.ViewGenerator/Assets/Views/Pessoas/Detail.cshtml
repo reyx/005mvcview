@@ -1,0 +1,90 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/pessoas.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Pessoas</legend>
+    @Html.Hidden("ID_PESSOA")
+        <div class="control-group">
+            <label class="control-label" for="COD_LOJA">Cod Loja</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_LOJA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="NOME_PESSOA">Nome Pessoa</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.NOME_PESSOA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TIPO_PESSOA">Tipo Pessoa</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TIPO_PESSOA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="OBS_PESSOA">Obs Pessoa</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.OBS_PESSOA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="FANTASIA_PESSOA">Fantasia Pessoa</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.FANTASIA_PESSOA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_DOC">Cod Doc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_DOC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="NASCIMENTO_PESSOA">Nascimento Pessoa</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.NASCIMENTO_PESSOA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ANIVERSARIO_PESSOA">Aniversario Pessoa</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ANIVERSARIO_PESSOA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DATACAD_PESSOA">Datacad Pessoa</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DATACAD_PESSOA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="NATUREZA_PESSOA">Natureza Pessoa</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.NATUREZA_PESSOA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="SENHA_PESSOA">Senha Pessoa</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.SENHA_PESSOA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="FOTO_PESSOA">Foto Pessoa</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.FOTO_PESSOA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="SENHA_PDV">Senha Pdv</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.SENHA_PDV)
+            </div>
+        </div>
+    </fieldset>
+</form>

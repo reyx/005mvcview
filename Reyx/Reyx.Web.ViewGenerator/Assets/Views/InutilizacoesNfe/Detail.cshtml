@@ -1,0 +1,90 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/inutilizacoesnfe.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Inutilizacoes Nfe</legend>
+    @Html.Hidden("ID_INUT")
+        <div class="control-group">
+            <label class="control-label" for="AMBIENTE_INUT">Ambiente Inut</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.AMBIENTE_INUT)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="SIGLA_UF">Sigla Uf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.SIGLA_UF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ANO_INUT">Ano Inut</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ANO_INUT)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CNPJ_INUT">Cnpj Inut</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CNPJ_INUT)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="MODELO_INUT">Modelo Inut</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.MODELO_INUT)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="SERIE_INUT">Serie Inut</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.SERIE_INUT)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="NUMERO_INICIAL_INUT">Numero Inicial Inut</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.NUMERO_INICIAL_INUT)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="NUMERO_INICIAL_INUT">Numero Inicial Inut</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.NUMERO_INICIAL_INUT)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="NUMERO_FINAL_INUT">Numero Final Inut</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.NUMERO_FINAL_INUT)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="NUMERO_FINAL_INUT">Numero Final Inut</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.NUMERO_FINAL_INUT)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="JUSTIFICATIVA_INUT">Justificativa Inut</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.JUSTIFICATIVA_INUT)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="JUSTIFICATIVA_INUT">Justificativa Inut</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.JUSTIFICATIVA_INUT)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_LOJA">Cod Loja</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_LOJA)
+            </div>
+        </div>
+    </fieldset>
+</form>

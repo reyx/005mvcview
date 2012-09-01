@@ -1,0 +1,48 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/tiposdespesa.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Tipos Despesa</legend>
+    @Html.Hidden("ID_TPDS")
+        <div class="control-group">
+            <label class="control-label" for="ID_GRDS">Id Grds</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_GRDS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DESC_TPDS">Desc Tpds</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESC_TPDS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="HISTOBRIG_TPDS">Histobrig Tpds</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.HISTOBRIG_TPDS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PADRAOZERO_TPDS">Padraozero Tpds</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PADRAOZERO_TPDS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="MARGEM_TPDS">Margem Tpds</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.MARGEM_TPDS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VALORPADRAO_TPDS">Valorpadrao Tpds</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VALORPADRAO_TPDS)
+            </div>
+        </div>
+    </fieldset>
+</form>

@@ -1,0 +1,18 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/regioes.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Regioes</legend>
+    @Html.Hidden("COD_REG")
+        <div class="control-group">
+            <label class="control-label" for="NOME_REG">Nome Reg</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.NOME_REG)
+            </div>
+        </div>
+    </fieldset>
+</form>

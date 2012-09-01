@@ -1,0 +1,48 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/videos.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Videos</legend>
+    @Html.Hidden("ID_VID")
+        <div class="control-group">
+            <label class="control-label" for="GUID_VID">Guid Vid</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.GUID_VID)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TITULO_VID">Titulo Vid</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TITULO_VID)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TEXTO_VID">Texto Vid</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TEXTO_VID)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DATA_VID">Data Vid</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DATA_VID)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CONTEUDO_VID">Conteudo Vid</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CONTEUDO_VID)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="IMAGEM_VID">Imagem Vid</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.IMAGEM_VID)
+            </div>
+        </div>
+    </fieldset>
+</form>

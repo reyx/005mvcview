@@ -1,0 +1,36 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/pessoasrelacionamento.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Pessoas Relacionamento</legend>
+    @Html.Hidden("ID_PSRL")
+        <div class="control-group">
+            <label class="control-label" for="ID_PESSOAA">Id Pessoaa</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_PESSOAA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_PESSOAB">Id Pessoab</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_PESSOAB)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_GRRL">Cod Grrl</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_GRRL)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DATA_GRRL">Data Grrl</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DATA_GRRL)
+            </div>
+        </div>
+    </fieldset>
+</form>

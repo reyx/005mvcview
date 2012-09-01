@@ -1,0 +1,24 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/transportadores.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Transportadores</legend>
+    @Html.Hidden("COD_TRAN")
+        <div class="control-group">
+            <label class="control-label" for="ATIVO_TRAN">Ativo Tran</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ATIVO_TRAN)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_PESSOA">Id Pessoa</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_PESSOA)
+            </div>
+        </div>
+    </fieldset>
+</form>

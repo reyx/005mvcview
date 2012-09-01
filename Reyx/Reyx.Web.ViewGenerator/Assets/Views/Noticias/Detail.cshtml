@@ -1,0 +1,30 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/noticias.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Noticias</legend>
+    @Html.Hidden("ID_NOT")
+        <div class="control-group">
+            <label class="control-label" for="TITULO_NOT">Titulo Not</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TITULO_NOT)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TEXTO_NOT">Texto Not</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TEXTO_NOT)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DATA_NOT">Data Not</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DATA_NOT)
+            </div>
+        </div>
+    </fieldset>
+</form>

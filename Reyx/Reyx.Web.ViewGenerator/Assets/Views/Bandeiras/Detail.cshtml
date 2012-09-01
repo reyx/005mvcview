@@ -1,0 +1,30 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/bandeiras.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Bandeiras</legend>
+    @Html.Hidden("COD_BAN")
+        <div class="control-group">
+            <label class="control-label" for="ID_PESSOA">Id Pessoa</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_PESSOA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ATIVO_BAN">Ativo Ban</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ATIVO_BAN)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ICONE_BAN">Icone Ban</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ICONE_BAN)
+            </div>
+        </div>
+    </fieldset>
+</form>

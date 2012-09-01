@@ -1,0 +1,336 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/entradas.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Entradas</legend>
+    @Html.Hidden("ID_ENTR")
+        <div class="control-group">
+            <label class="control-label" for="NUMERO_ENTR">Numero Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.NUMERO_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_LOJA">Cod Loja</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_LOJA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_FORN">Cod Forn</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_FORN)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CFOP_NTOP">Cfop Ntop</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CFOP_NTOP)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CFOP_NTOP_TRAN_ENTR">Cfop Ntop Tran Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CFOP_NTOP_TRAN_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_OPER">Id Oper</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_OPER)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_VDA">Id Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_CDPG">Cod Cdpg</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_CDPG)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_VEND">Cod Vend</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_VEND)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_TRAN">Cod Tran</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_TRAN)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_VEIC">Id Veic</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_VEIC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DATA_ENTR">Data Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DATA_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="EMISSAO_ENTR">Emissao Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.EMISSAO_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CONDICIONAL_ENTR">Condicional Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CONDICIONAL_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BICMS_ENTR">Bicms Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BICMS_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ICMS_ENTR">Icms Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ICMS_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BICMSST_ENTR">Bicmsst Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BICMSST_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ICMSST_ENTR">Icmsst Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ICMSST_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="IPI_ENTR">Ipi Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.IPI_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="IPIST_ENTR">Ipist Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.IPIST_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PIS_ENTR">Pis Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PIS_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PISST_ENTR">Pisst Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PISST_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COFINS_ENTR">Cofins Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COFINS_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COFINSST_ENTR">Cofinsst Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COFINSST_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VLRMERC_ENTR">Vlrmerc Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VLRMERC_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="FRETE_ENTR">Frete Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.FRETE_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="SEGURO_ENTR">Seguro Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.SEGURO_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DESCONTO_ENTR">Desconto Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESCONTO_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DESP_ACESSORIA_ENTR">Desp Acessoria Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESP_ACESSORIA_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VLRTOT_ENTR">Vlrtot Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VLRTOT_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="OBS_ENTR">Obs Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.OBS_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TIPO_ENTR">Tipo Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TIPO_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="STATUS_ENTR">Status Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.STATUS_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_ENPS_FORN_ENTR">Id Enps Forn Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_ENPS_FORN_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_ENPS_ENT_ENTR">Id Enps Ent Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_ENPS_ENT_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_ENPS_LOJA_ENTR">Id Enps Loja Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_ENPS_LOJA_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_ENPS_RET_ENTR">Id Enps Ret Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_ENPS_RET_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_ENPS_TRAN_ENTR">Id Enps Tran Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_ENPS_TRAN_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="II_ENTR">Ii Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.II_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BIRRF_ENTR">Birrf Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BIRRF_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="IRRF_ENTR">Irrf Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.IRRF_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BPREV_ENTR">Bprev Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BPREV_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PREV_ENTR">Prev Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PREV_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="RIPI_ENTR">Ripi Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.RIPI_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="RPIS_ENTR">Rpis Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.RPIS_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="RCOFINS_ENTR">Rcofins Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.RCOFINS_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="RCSLL_ENTR">Rcsll Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.RCSLL_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="MODFRETE_ENTR">Modfrete Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.MODFRETE_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BICMS_TRAN_ENTR">Bicms Tran Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BICMS_TRAN_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PICMS_TRAN_ENTR">Picms Tran Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PICMS_TRAN_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ICMS_TRAN_ENTR">Icms Tran Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ICMS_TRAN_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VALOR_TRAN_ENTR">Valor Tran Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VALOR_TRAN_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PESOLIQ_ENTR">Pesoliq Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PESOLIQ_ENTR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PESOBRT_ENTR">Pesobrt Entr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PESOBRT_ENTR)
+            </div>
+        </div>
+    </fieldset>
+</form>

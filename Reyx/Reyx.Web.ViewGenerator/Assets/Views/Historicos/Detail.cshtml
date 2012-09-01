@@ -1,0 +1,24 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/historicos.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Historicos</legend>
+    @Html.Hidden("COD_HIST")
+        <div class="control-group">
+            <label class="control-label" for="DESC_HIST">Desc Hist</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESC_HIST)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="OPER_HIST">Oper Hist</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.OPER_HIST)
+            </div>
+        </div>
+    </fieldset>
+</form>

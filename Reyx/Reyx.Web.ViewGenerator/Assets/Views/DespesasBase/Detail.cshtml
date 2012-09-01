@@ -1,0 +1,42 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/despesasbase.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Despesas Base</legend>
+    @Html.Hidden("ID_DSBS")
+        <div class="control-group">
+            <label class="control-label" for="ID_TPDS">Id Tpds</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_TPDS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_LOJA">Cod Loja</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_LOJA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PADRAOZERO_DSBS">Padraozero Dsbs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PADRAOZERO_DSBS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="MARGEM_DSBS">Margem Dsbs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.MARGEM_DSBS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VALORPADRAO_DSBS">Valorpadrao Dsbs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VALORPADRAO_DSBS)
+            </div>
+        </div>
+    </fieldset>
+</form>

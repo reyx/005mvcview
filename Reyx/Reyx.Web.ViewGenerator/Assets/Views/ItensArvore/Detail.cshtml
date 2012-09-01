@@ -1,0 +1,36 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/itensarvore.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Itens Arvore</legend>
+    @Html.Hidden("ID_ITAR")
+        <div class="control-group">
+            <label class="control-label" for="ID_ARV">Id Arv</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_ARV)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_PROD">Cod Prod</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_PROD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PERCCUSTO_ITAR">Perccusto Itar</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PERCCUSTO_ITAR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QUANTIDADE_ITAR">Quantidade Itar</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QUANTIDADE_ITAR)
+            </div>
+        </div>
+    </fieldset>
+</form>

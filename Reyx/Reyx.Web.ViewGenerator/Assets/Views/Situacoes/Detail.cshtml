@@ -1,0 +1,30 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/situacoes.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Situacoes</legend>
+    @Html.Hidden("COD_SITU")
+        <div class="control-group">
+            <label class="control-label" for="NOME_SITU">Nome Situ</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.NOME_SITU)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COR_SITU">Cor Situ</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COR_SITU)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ACAO_SITU">Acao Situ</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ACAO_SITU)
+            </div>
+        </div>
+    </fieldset>
+</form>

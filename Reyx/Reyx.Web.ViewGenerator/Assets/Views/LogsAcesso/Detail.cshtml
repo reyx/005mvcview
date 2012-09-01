@@ -1,0 +1,36 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/logsacesso.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Logs Acesso</legend>
+    @Html.Hidden("ID_LOG")
+        <div class="control-group">
+            <label class="control-label" for="ID_OPER">Id Oper</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_OPER)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="IP_LOG">Ip Log</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.IP_LOG)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DATA_LOG">Data Log</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DATA_LOG)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ACAO_LOG">Acao Log</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ACAO_LOG)
+            </div>
+        </div>
+    </fieldset>
+</form>

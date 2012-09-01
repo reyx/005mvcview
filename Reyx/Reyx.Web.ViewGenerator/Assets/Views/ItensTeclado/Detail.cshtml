@@ -1,0 +1,54 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/itensteclado.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Itens Teclado</legend>
+    @Html.Hidden("ID_ITTC")
+        <div class="control-group">
+            <label class="control-label" for="ID_TCRP">Id Tcrp</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_TCRP)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TECLA_ITTC">Tecla Ittc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TECLA_ITTC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TIPO_ITTC">Tipo Ittc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TIPO_ITTC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_PROD">Cod Prod</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_PROD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_PROM">Cod Prom</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_PROM)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QTDE_ITTC">Qtde Ittc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QTDE_ITTC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DESC_ITTC">Desc Ittc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESC_ITTC)
+            </div>
+        </div>
+    </fieldset>
+</form>

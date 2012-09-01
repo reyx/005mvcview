@@ -1,0 +1,198 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/microterminais.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Micro Terminais</legend>
+    @Html.Hidden("ID_MTER")
+        <div class="control-group">
+            <label class="control-label" for="NUMERO_MTER">Numero Mter</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.NUMERO_MTER)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_LOJA">Cod Loja</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_LOJA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_PDV">Id Pdv</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_PDV)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DESC_MTER">Desc Mter</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESC_MTER)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TIPO_MTER">Tipo Mter</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TIPO_MTER)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TIMEOUT_MTER">Timeout Mter</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TIMEOUT_MTER)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="NOVACOM_MTER">Novacom Mter</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.NOVACOM_MTER)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TIPOCON_MTER">Tipocon Mter</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TIPOCON_MTER)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TECLACOM_MTER">Teclacom Mter</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TECLACOM_MTER)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TECLACLI_MTER">Teclacli Mter</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TECLACLI_MTER)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TECLAVEND_MTER">Teclavend Mter</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TECLAVEND_MTER)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TECLABAL_MTER">Teclabal Mter</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TECLABAL_MTER)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TECLAPROD_MTER">Teclaprod Mter</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TECLAPROD_MTER)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TECLAMULT_MTER">Teclamult Mter</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TECLAMULT_MTER)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TECLAPRECO_MTER">Teclapreco Mter</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TECLAPRECO_MTER)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TECLAFEC_MTER">Teclafec Mter</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TECLAFEC_MTER)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TECLAFCP_MTER">Teclafcp Mter</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TECLAFCP_MTER)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TECLACNS_MTER">Teclacns Mter</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TECLACNS_MTER)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TECLASIM_MTER">Teclasim Mter</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TECLASIM_MTER)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TECLANAO_MTER">Teclanao Mter</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TECLANAO_MTER)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_LISTA">Cod Lista</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_LISTA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COMINI_MTER">Comini Mter</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COMINI_MTER)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COMFIN_MTER">Comfin Mter</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COMFIN_MTER)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TOSERIAL_MTER">Toserial Mter</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TOSERIAL_MTER)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BALTMRET_MTER">Baltmret Mter</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BALTMRET_MTER)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BALINI_MTER">Balini Mter</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BALINI_MTER)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BALTAM_MTER">Baltam Mter</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BALTAM_MTER)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BALDIV_MTER">Baldiv Mter</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BALDIV_MTER)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="BALCNF_MTER">Balcnf Mter</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.BALCNF_MTER)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TORRE_MTER">Torre Mter</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TORRE_MTER)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ENDIP_MTER">Endip Mter</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ENDIP_MTER)
+            </div>
+        </div>
+    </fieldset>
+</form>

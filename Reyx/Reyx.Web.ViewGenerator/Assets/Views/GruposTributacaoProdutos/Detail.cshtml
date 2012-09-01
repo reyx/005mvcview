@@ -1,0 +1,53 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/grupostributacaoprodutos.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Grupos Tributacao Produtos</legend>
+        <div class="control-group">
+            <label class="control-label" for="COD_GRTP">Cod Grtp</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_GRTP)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DESC_GRTP">Desc Grtp</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESC_GRTP)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ORIGEM_GRTP">Origem Grtp</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ORIGEM_GRTP)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TICMS_GRTP">Ticms Grtp</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TICMS_GRTP)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TIPI_GRTP">Tipi Grtp</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TIPI_GRTP)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TPIS_GRTP">Tpis Grtp</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TPIS_GRTP)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TCOFINS_GRTP">Tcofins Grtp</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TCOFINS_GRTP)
+            </div>
+        </div>
+    </fieldset>
+</form>

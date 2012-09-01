@@ -1,0 +1,54 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/recebimentosvenda.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Recebimentos Venda</legend>
+    @Html.Hidden("ID_RCVD")
+        <div class="control-group">
+            <label class="control-label" for="ID_VDA">Id Vda</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_VDA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="SEQ_RCVD">Seq Rcvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.SEQ_RCVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_TPRC">Cod Tprc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_TPRC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_STRC">Cod Strc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_STRC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_PRST">Cod Prst</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_PRST)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VALOR_RCVD">Valor Rcvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VALOR_RCVD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="LIQUIDO_RCVD">Liquido Rcvd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.LIQUIDO_RCVD)
+            </div>
+        </div>
+    </fieldset>
+</form>

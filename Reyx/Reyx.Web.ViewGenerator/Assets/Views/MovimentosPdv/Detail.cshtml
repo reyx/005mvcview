@@ -1,0 +1,78 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/movimentospdv.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Movimentos Pdv</legend>
+    @Html.Hidden("ID_MVPD")
+        <div class="control-group">
+            <label class="control-label" for="DATA_MVPD">Data Mvpd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DATA_MVPD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TURNO_MVPD">Turno Mvpd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TURNO_MVPD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_PDV">Id Pdv</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_PDV)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_LOJA">Cod Loja</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_LOJA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_OPER">Id Oper</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_OPER)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="SITUACAO_MVPD">Situacao Mvpd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.SITUACAO_MVPD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="HORAINI_MVPD">Horaini Mvpd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.HORAINI_MVPD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="HORAFEC_MVPD">Horafec Mvpd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.HORAFEC_MVPD)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_OPER_SUPA">Id Oper Supa</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_OPER_SUPA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_OPER_SUPF">Id Oper Supf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_OPER_SUPF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ACRESCIMOS_MVPD">Acrescimos Mvpd</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ACRESCIMOS_MVPD)
+            </div>
+        </div>
+    </fieldset>
+</form>

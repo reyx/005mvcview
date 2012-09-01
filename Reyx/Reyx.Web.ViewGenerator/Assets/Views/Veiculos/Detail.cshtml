@@ -1,0 +1,36 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/veiculos.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Veiculos</legend>
+    @Html.Hidden("ID_VEIC")
+        <div class="control-group">
+            <label class="control-label" for="PLACA_VEIC">Placa Veic</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PLACA_VEIC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_CID">Id Cid</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_CID)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="RNTC_VEIC">Rntc Veic</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.RNTC_VEIC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_TRAN">Cod Tran</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_TRAN)
+            </div>
+        </div>
+    </fieldset>
+</form>

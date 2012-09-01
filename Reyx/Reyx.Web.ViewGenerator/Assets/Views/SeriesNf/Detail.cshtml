@@ -1,0 +1,30 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/seriesnf.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Series Nf</legend>
+    @Html.Hidden("ID_SRNF")
+        <div class="control-group">
+            <label class="control-label" for="NUMERO_SRNF">Numero Srnf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.NUMERO_SRNF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_LOJA">Cod Loja</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_LOJA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PRINCIPAL_SRNF">Principal Srnf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PRINCIPAL_SRNF)
+            </div>
+        </div>
+    </fieldset>
+</form>

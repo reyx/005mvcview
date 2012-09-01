@@ -1,0 +1,24 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/fornecedores.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Fornecedores</legend>
+    @Html.Hidden("COD_FORN")
+        <div class="control-group">
+            <label class="control-label" for="ID_PESSOA">Id Pessoa</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_PESSOA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ATIVO_FORN">Ativo Forn</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ATIVO_FORN)
+            </div>
+        </div>
+    </fieldset>
+</form>

@@ -1,0 +1,66 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/itensmovimento.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Itens Movimento</legend>
+    @Html.Hidden("ID_ITMV")
+        <div class="control-group">
+            <label class="control-label" for="ID_OPER">Id Oper</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_OPER)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_MVNT">Id Mvnt</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_MVNT)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_VLPR">Id Vlpr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_VLPR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_TPMV">Cod Tpmv</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_TPMV)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_TPMV_DS">Cod Tpmv Ds</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_TPMV_DS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_LCES">Cod Lces</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_LCES)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_LCES_DS">Cod Lces Ds</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_LCES_DS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QTDE_ITMV">Qtde Itmv</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QTDE_ITMV)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_LOJA_DS">Cod Loja Ds</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_LOJA_DS)
+            </div>
+        </div>
+    </fieldset>
+</form>

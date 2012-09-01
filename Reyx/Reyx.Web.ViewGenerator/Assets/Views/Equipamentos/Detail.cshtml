@@ -1,0 +1,72 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/equipamentos.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Equipamentos</legend>
+    @Html.Hidden("ID_EQUIP")
+        <div class="control-group">
+            <label class="control-label" for="ID_TPEQ">Id Tpeq</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_TPEQ)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="SERIE_EQUIP">Serie Equip</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.SERIE_EQUIP)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="SERIEOBRIG_EQUIP">Serieobrig Equip</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.SERIEOBRIG_EQUIP)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DIASDEVOPAD_EQUIP">Diasdevopad Equip</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DIASDEVOPAD_EQUIP)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DESC_EQUIP">Desc Equip</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESC_EQUIP)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CODBAR_EQUIP">Codbar Equip</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CODBAR_EQUIP)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VALOR_EQUIP">Valor Equip</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VALOR_EQUIP)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_CLI">Cod Cli</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_CLI)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_LOJA">Cod Loja</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_LOJA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QTDE_EQUIP">Qtde Equip</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QTDE_EQUIP)
+            </div>
+        </div>
+    </fieldset>
+</form>

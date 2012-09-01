@@ -1,0 +1,24 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/indicacoes.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Indicacoes</legend>
+    @Html.Hidden("COD_IND")
+        <div class="control-group">
+            <label class="control-label" for="DESCRICAO_IND">Descricao Ind</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESCRICAO_IND)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="OBS_IND">Obs Ind</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.OBS_IND)
+            </div>
+        </div>
+    </fieldset>
+</form>

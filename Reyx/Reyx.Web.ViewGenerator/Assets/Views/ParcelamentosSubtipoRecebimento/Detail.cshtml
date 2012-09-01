@@ -1,0 +1,78 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/parcelamentossubtiporecebimento.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Parcelamentos Subtipo Recebimento</legend>
+    @Html.Hidden("COD_PRST")
+        <div class="control-group">
+            <label class="control-label" for="COD_STRC">Cod Strc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_STRC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DESC_PRST">Desc Prst</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESC_PRST)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="SEQNUM_PRST">Seqnum Prst</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.SEQNUM_PRST)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="SEQLETRA_PRST">Seqletra Prst</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.SEQLETRA_PRST)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DESCONTO_PRST">Desconto Prst</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESCONTO_PRST)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DIAS1_PRST">Dias1 Prst</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DIAS1_PRST)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DIAS2_PRST">Dias2 Prst</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DIAS2_PRST)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DIAS3_PRST">Dias3 Prst</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DIAS3_PRST)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DIAS4_PRST">Dias4 Prst</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DIAS4_PRST)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DIAS5_PRST">Dias5 Prst</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DIAS5_PRST)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DIAS6_PRST">Dias6 Prst</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DIAS6_PRST)
+            </div>
+        </div>
+    </fieldset>
+</form>

@@ -1,0 +1,24 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/cuponsfiscaisnf.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Cupons Fiscais Nf</legend>
+    @Html.Hidden("ID_CPNF")
+        <div class="control-group">
+            <label class="control-label" for="ID_CPFS">Id Cpfs</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_CPFS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_NF">Id Nf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_NF)
+            </div>
+        </div>
+    </fieldset>
+</form>

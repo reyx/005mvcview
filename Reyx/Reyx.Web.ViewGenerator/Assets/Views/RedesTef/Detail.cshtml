@@ -1,0 +1,156 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/redestef.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Redes Tef</legend>
+    @Html.Hidden("ID_RDTF")
+        <div class="control-group">
+            <label class="control-label" for="COD_LOJA">Cod Loja</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_LOJA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="NUMERO_RDTF">Numero Rdtf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.NUMERO_RDTF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="NOME_RDTF">Nome Rdtf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.NOME_RDTF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ARQTMP_RDTF">Arqtmp Rdtf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ARQTMP_RDTF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ARQREQ_RDTF">Arqreq Rdtf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ARQREQ_RDTF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ARQSTA_RDTF">Arqsta Rdtf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ARQSTA_RDTF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ARQRES_RDTF">Arqres Rdtf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ARQRES_RDTF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ARQEXE_RDTF">Arqexe Rdtf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ARQEXE_RDTF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TENTATIVAS_RDTF">Tentativas Rdtf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TENTATIVAS_RDTF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TOTEF_RDTF">Totef Rdtf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TOTEF_RDTF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TOTRS_RDTF">Totrs Rdtf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TOTRS_RDTF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VIASTEF_RDTF">Viastef Rdtf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VIASTEF_RDTF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VIASADM_RDTF">Viasadm Rdtf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VIASADM_RDTF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TIPOCNF_RDTF">Tipocnf Rdtf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TIPOCNF_RDTF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="MTPL_RDTF">Mtpl Rdtf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.MTPL_RDTF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="MTPLENV_RDTF">Mtplenv Rdtf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.MTPLENV_RDTF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="MASCVAL_RDTF">Mascval Rdtf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.MASCVAL_RDTF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="MENSINAT_RDTF">Mensinat Rdtf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.MENSINAT_RDTF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="MENSNCN_RDTF">Mensncn Rdtf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.MENSNCN_RDTF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="MENSCNC_RDTF">Menscnc Rdtf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.MENSCNC_RDTF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="MENSNC2_RDTF">Mensnc2 Rdtf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.MENSNC2_RDTF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="AUTOFINAL_RDTF">Autofinal Rdtf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.AUTOFINAL_RDTF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="AUTOCANC_RDTF">Autocanc Rdtf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.AUTOCANC_RDTF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ATV_RDTF">Atv Rdtf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ATV_RDTF)
+            </div>
+        </div>
+    </fieldset>
+</form>

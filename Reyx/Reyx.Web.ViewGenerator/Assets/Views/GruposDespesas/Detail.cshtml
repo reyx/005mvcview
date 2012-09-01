@@ -1,0 +1,24 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/gruposdespesas.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Grupos Despesas</legend>
+    @Html.Hidden("ID_GRDS")
+        <div class="control-group">
+            <label class="control-label" for="GRUPO_GRDS">Grupo Grds</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.GRUPO_GRDS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DESC_GRDS">Desc Grds</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESC_GRDS)
+            </div>
+        </div>
+    </fieldset>
+</form>

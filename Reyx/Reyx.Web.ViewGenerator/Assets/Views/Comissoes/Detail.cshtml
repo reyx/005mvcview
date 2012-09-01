@@ -1,0 +1,84 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/comissoes.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Comissoes</legend>
+    @Html.Hidden("ID_COMS")
+        <div class="control-group">
+            <label class="control-label" for="STATUS_COMS">Status Coms</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.STATUS_COMS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DATAFAT_COMS">Datafat Coms</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DATAFAT_COMS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DATAVENC_COMS">Datavenc Coms</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DATAVENC_COMS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="NUMERO_COMS">Numero Coms</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.NUMERO_COMS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="LETRA_COMS">Letra Coms</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.LETRA_COMS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VALPAG_COMS">Valpag Coms</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VALPAG_COMS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VALOR_COMS">Valor Coms</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VALOR_COMS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TIPO_COMS">Tipo Coms</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TIPO_COMS)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_CLI">Cod Cli</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_CLI)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_VEND">Cod Vend</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_VEND)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_CDPG">Cod Cdpg</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_CDPG)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PARCELA_COMS">Parcela Coms</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PARCELA_COMS)
+            </div>
+        </div>
+    </fieldset>
+</form>

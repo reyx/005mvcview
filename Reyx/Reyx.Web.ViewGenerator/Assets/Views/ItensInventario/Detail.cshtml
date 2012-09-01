@@ -1,0 +1,36 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/itensinventario.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Itens Inventario</legend>
+    @Html.Hidden("ID_ITIV")
+        <div class="control-group">
+            <label class="control-label" for="ID_INV">Id Inv</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_INV)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_VLPR">Id Vlpr</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_VLPR)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="QTDE_ITIV">Qtde Itiv</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QTDE_ITIV)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_OPER">Id Oper</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_OPER)
+            </div>
+        </div>
+    </fieldset>
+</form>

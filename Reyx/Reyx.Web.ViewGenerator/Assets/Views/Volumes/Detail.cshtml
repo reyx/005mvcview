@@ -1,0 +1,48 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/volumes.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Volumes</legend>
+    @Html.Hidden("ID_VOL")
+        <div class="control-group">
+            <label class="control-label" for="QTDE_VOL">Qtde Vol</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.QTDE_VOL)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ESPECIE_VOL">Especie Vol</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ESPECIE_VOL)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="MARCA_VOL">Marca Vol</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.MARCA_VOL)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="NUMERACAO_VOL">Numeracao Vol</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.NUMERACAO_VOL)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PESOLIQ_VOL">Pesoliq Vol</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PESOLIQ_VOL)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="PESOBRT_VOL">Pesobrt Vol</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.PESOBRT_VOL)
+            </div>
+        </div>
+    </fieldset>
+</form>

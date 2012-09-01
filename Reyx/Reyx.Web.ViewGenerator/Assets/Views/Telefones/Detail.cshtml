@@ -1,0 +1,30 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/telefones.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Telefones</legend>
+    @Html.Hidden("ID_FONE")
+        <div class="control-group">
+            <label class="control-label" for="NUMERO_FONE">Numero Fone</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.NUMERO_FONE)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="OBS_FONE">Obs Fone</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.OBS_FONE)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_PESSOA">Id Pessoa</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_PESSOA)
+            </div>
+        </div>
+    </fieldset>
+</form>

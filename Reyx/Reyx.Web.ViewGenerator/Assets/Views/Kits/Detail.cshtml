@@ -1,0 +1,48 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/kits.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Kits</legend>
+    @Html.Hidden("ID_KIT")
+        <div class="control-group">
+            <label class="control-label" for="COD_KIT">Cod Kit</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_KIT)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DESC_KIT">Desc Kit</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESC_KIT)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="LOTE_KIT">Lote Kit</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.LOTE_KIT)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="OBS_KIT">Obs Kit</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.OBS_KIT)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="FOTO_KIT">Foto Kit</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.FOTO_KIT)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="COD_LOJA">Cod Loja</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_LOJA)
+            </div>
+        </div>
+    </fieldset>
+</form>

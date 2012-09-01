@@ -1,0 +1,18 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/tiposocorrencia.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Tipos Ocorrencia</legend>
+    @Html.Hidden("COD_TPOC")
+        <div class="control-group">
+            <label class="control-label" for="DESC_TPOC">Desc Tpoc</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESC_TPOC)
+            </div>
+        </div>
+    </fieldset>
+</form>

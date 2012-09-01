@@ -1,0 +1,30 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/modelosecf.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Modelos Ecf</legend>
+    @Html.Hidden("ID_MDEC")
+        <div class="control-group">
+            <label class="control-label" for="ID_MECF">Id Mecf</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_MECF)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DESC_MDEC">Desc Mdec</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESC_MDEC)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="OBS_MDEC">Obs Mdec</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.OBS_MDEC)
+            </div>
+        </div>
+    </fieldset>
+</form>

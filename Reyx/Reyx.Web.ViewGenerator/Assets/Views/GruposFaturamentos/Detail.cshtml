@@ -1,0 +1,71 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/gruposfaturamentos.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Grupos Faturamentos</legend>
+        <div class="control-group">
+            <label class="control-label" for="COD_GRFT">Cod Grft</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.COD_GRFT)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="DESC_GRFT">Desc Grft</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESC_GRFT)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CF_GRFT">Cf Grft</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CF_GRFT)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CST_GRFT">Cst Grft</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CST_GRFT)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ID_UNID">Id Unid</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ID_UNID)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ORIGEM_GRFT">Origem Grft</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.ORIGEM_GRFT)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TICMS_GRFT">Ticms Grft</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TICMS_GRFT)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TIPI_GRFT">Tipi Grft</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TIPI_GRFT)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TPIS_GRFT">Tpis Grft</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TPIS_GRFT)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="TCOFINS_GRFT">Tcofins Grft</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.TCOFINS_GRFT)
+            </div>
+        </div>
+    </fieldset>
+</form>

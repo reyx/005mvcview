@@ -1,0 +1,36 @@
+@{
+    Layout = "~/Views/Shared/_Pages.cshtml";
+}
+@session Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/cadastros/listas.js")"></script>
+}
+<form action="/" method="post" class="form-horizontal">
+    <fieldset>
+        <legend>Listas</legend>
+    @Html.Hidden("COD_LISTA")
+        <div class="control-group">
+            <label class="control-label" for="DESC_LISTA">Desc Lista</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.DESC_LISTA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VALIDADE_INICIO_LISTA">Validade Inicio Lista</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VALIDADE_INICIO_LISTA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="VALIDADE_TERMINO_LISTA">Validade Termino Lista</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.VALIDADE_TERMINO_LISTA)
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="CPOPRECO_LISTA">Cpopreco Lista</label>
+            <div class="controls">
+                @Html.EditorFor(model => model.CPOPRECO_LISTA)
+            </div>
+        </div>
+    </fieldset>
+</form>
